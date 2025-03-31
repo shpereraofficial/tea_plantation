@@ -6,9 +6,11 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Tea Plantation System') }}</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -17,12 +19,12 @@
             @include('layouts.navigation') <!-- Top Navigation -->
 
             <!-- Main content container with flex layout -->
-            <div class="flex">
+            <div class="flex h-screen overflow-hidden">
                 <!-- Sidebar -->
-                <x-sidebar class="w-64" /> <!-- Adjust sidebar width as needed -->
+                <x-sidebar /> <!-- Fixed Sidebar -->
 
                 <!-- Page Content Area -->
-                <main class="flex-1 p-6">
+                <main class="flex-1 p-6 overflow-y-auto">
                     <!-- Page Heading -->
                     @isset($header)
                         <header class="bg-white dark:bg-gray-800 shadow mb-6">
@@ -39,3 +41,4 @@
         </div>
     </body>
 </html>
+

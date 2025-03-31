@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="p-6 text-gray-900 dark:text-gray-100">
         <h2 class="text-xl font-semibold mb-4">Add Supplier</h2>
-        {{-- <p class="mb-6">+ new supplier.</p> --}}
+        <p class="mb-6">+ new supplier.</p>
 
         <!-- Card for the Form -->
         <div class="bg-white dark:bg-gray-800 shadow-lg sm:rounded-lg p-6">

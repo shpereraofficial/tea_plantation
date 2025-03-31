@@ -48,10 +48,19 @@
             </a>
         </li>
     
-        <li class="mb-2">
-            <a href="{{ route('supplier.index') }}" class="flex items-center p-2 rounded hover:bg-gray-700">
-                <i class="fas fa-cog mr-2"></i> Settings
-            </a>
+         <!-- Settings with Submenu -->
+         <li class="mb-2">
+            <button onclick="toggleDropdown('settings-menu')" class="flex items-center justify-between w-full p-2 rounded hover:bg-gray-700">
+                <span><i class="fas fa-cogs mr-2"></i> Settings</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <ul id="settings-menu" class="hidden pl-4 mt-2 space-y-1">
+                <li>
+                    <a href="" class="flex items-center p-2 rounded hover:bg-gray-700">
+                        <i class="fas fa-key mr-2"></i> Change Password
+                    </a>
+                </li>
+            </ul>
         </li>
     </ul>
 </div>

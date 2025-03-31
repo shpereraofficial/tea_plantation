@@ -18,9 +18,9 @@
                 <tbody>
                     {{-- @foreach ($suppliers as $supplier) --}}
                         <tr>
-                            <td class="px-4 py-2"></td>
-                            <td class="px-4 py-2"></td>
-                            <td class="px-4 py-2"></td>
+                            <td class="px-4 py-2">Kevin</td>
+                            <td class="px-4 py-2">k@gmail.com</td>
+                            <td class="px-4 py-2">0702327328</td>
                             <td class="px-4 py-2">
                                 <a href="" class="text-blue-500 hover:text-blue-700">Edit</a>
                                 <form action="" method="POST" style="display:inline;">
